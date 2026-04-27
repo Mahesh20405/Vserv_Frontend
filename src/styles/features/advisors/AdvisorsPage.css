@@ -1,0 +1,287 @@
+.advisors-page {
+  --advisors-border: #e5e7eb;
+  --advisors-text: #0f172a;
+  --advisors-muted: #64748b;
+}
+
+.advisors-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 16px;
+  align-items: start;
+}
+
+.advisors-main,
+.advisors-sidebar {
+  min-width: 0;
+}
+
+.advisors-toolbar-card,
+.advisor-card,
+.advisor-booking-card,
+.advisors-empty-state,
+.sidebar-card {
+  border: 1px solid var(--advisors-border);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.advisors-toolbar-card {
+  padding: 14px 16px;
+}
+
+.advisors-grid,
+.advisor-bookings-list,
+.advisors-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.advisor-card {
+  padding: 16px;
+}
+
+.advisor-card-top {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: start;
+}
+
+.advisor-avatar,
+.advisor-sidebar-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.advisor-sidebar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f97316, #fb923c);
+}
+
+.advisor-profile,
+.advisor-badges {
+  min-width: 0;
+}
+
+.advisor-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.advisor-name,
+.advisor-booking-service,
+.advisor-sidebar-name {
+  color: var(--advisors-text);
+  font-weight: 700;
+}
+
+.advisor-email,
+.advisor-spec,
+.advisor-booking-vehicle,
+.advisor-sidebar-meta {
+  color: var(--advisors-muted);
+  font-size: 0.76rem;
+}
+
+.advisor-status-pill,
+.advisor-booking-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.advisor-card-body {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.advisor-metrics,
+.advisor-assignment-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.advisor-metric-label {
+  color: #94a3b8;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.advisor-metric-value,
+.advisor-booking-number {
+  color: var(--advisors-text);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.advisor-load-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--advisors-muted);
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.advisor-load-track,
+.advisors-progress-track {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+
+.advisor-load-fill,
+.advisors-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.advisor-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.advisors-pending-count {
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: #fff7ed;
+  color: #f97316;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.advisor-booking-card {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.advisor-booking-main {
+  min-width: 0;
+}
+
+.advisor-booking-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.advisor-booking-meta {
+  color: var(--advisors-muted);
+  font-size: 0.74rem;
+}
+
+.advisor-assign-btn,
+.advisors-save-btn {
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #fff;
+  font-weight: 700;
+}
+
+.advisor-assign-btn {
+  padding: 9px 14px;
+  font-size: 0.78rem;
+}
+
+.advisors-save-btn {
+  padding: 8px 14px;
+}
+
+.advisor-sidebar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.advisor-sidebar-count {
+  color: var(--advisors-muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.advisors-empty-state {
+  padding: 42px 20px;
+  text-align: center;
+}
+
+.advisors-empty-state.compact {
+  padding: 28px 20px;
+}
+
+
+
+
+.modal-form-control {
+  border-radius: 10px;
+}
+
+.advisor-preferred-hint {
+  margin-top: 10px;
+  color: var(--advisors-muted);
+  font-size: 0.74rem;
+}
+
+@media (max-width: 1100px) {
+  .advisors-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .advisor-card-top,
+  .advisor-booking-card,
+  .advisor-metrics,
+  .advisor-assignment-summary {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .advisor-card-top {
+    display: flex;
+  }
+
+  .advisor-badges {
+    align-items: flex-start;
+  }
+
+  .advisor-actions {
+    justify-content: flex-start;
+  }
+}

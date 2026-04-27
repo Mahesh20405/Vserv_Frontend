@@ -1,0 +1,358 @@
+.users-page .users-hero {
+  padding: 1.75rem 0;
+}
+
+.users-add-btn,
+.users-save-btn {
+  border: 0;
+  border-radius: 0.65rem;
+  background: var(--primary-accent);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.65rem 1rem;
+  box-shadow: 0 10px 20px rgba(249, 115, 22, 0.2);
+}
+
+.users-save-btn-sm {
+  padding: 0.45rem 0.9rem;
+}
+
+.users-add-btn:hover,
+.users-save-btn:hover {
+  background: var(--primary-accent-hover);
+}
+
+.users-toolbar-card .toolbar-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--neutral-medium);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+
+.btn-reset {
+  border: 1px solid #d1d5db;
+  border-radius: 0.65rem;
+  background: #fff;
+  color: var(--neutral-dark);
+  font-size: 0.82rem;
+  font-weight: 600;
+  min-height: 37px;
+}
+
+.users-layout {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: minmax(0, 1fr) 300px;
+}
+
+.results-bar {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.9rem 0.9rem 0 0;
+  border-bottom: 0;
+  padding: 0.8rem 1rem 0.65rem;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #fff2e8;
+  color: #c2410c;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+}
+
+.users-grid-header {
+  display: grid;
+  grid-template-columns: 56px minmax(180px, 1.7fr) minmax(120px, 1fr) 110px 110px 110px 180px;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0 1rem 0.55rem;
+  color: var(--neutral-medium);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.user-row-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.user-row-accent {
+  display: none;
+}
+
+.user-row-body {
+  display: grid;
+  grid-template-columns: 56px minmax(180px, 1.7fr) minmax(120px, 1fr) 110px 110px 110px 180px;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.users-grid-header > span:nth-child(4),
+.users-grid-header > span:nth-child(5),
+.users-grid-header > span:nth-child(6),
+.users-grid-header > span:nth-child(7) {
+  justify-self: start;
+}
+
+.user-avatar,
+.users-profile-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.users-profile-avatar {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 0.8rem;
+  font-size: 1.2rem;
+}
+
+.user-avatar-sm {
+  width: 28px;
+  height: 28px;
+  font-size: 0.62rem;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.user-email,
+.user-designation,
+.recent-user-meta,
+.recent-user-time,
+.user-joined,
+.user-phone {
+  color: var(--neutral-medium);
+  font-size: 0.76rem;
+}
+
+.user-phone,
+.user-joined {
+  line-height: 1.3;
+}
+
+.user-row-body > div:nth-child(4),
+.user-row-body > div:nth-child(5),
+.user-row-body > div:nth-child(6) {
+  justify-self: start;
+}
+
+.users-role-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+}
+
+.users-role-customer {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.users-role-admin {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.users-role-advisor {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.user-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.users-sidebar {
+  position: sticky;
+  top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: start;
+}
+
+.sidebar-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  padding: 1rem;
+}
+
+.sidebar-title {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 0.9rem;
+}
+
+.users-progress-track {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  overflow: hidden;
+}
+
+.users-progress-fill {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.users-status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.users-status-stat {
+  background: #f8fafc;
+  border-radius: 0.85rem;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.users-status-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.users-status-label,
+.users-info-label,
+.users-form-label {
+  color: var(--neutral-medium);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.recent-user-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.recent-user-name,
+.users-info-value {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.users-empty-state {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 2.5rem 1.25rem;
+  text-align: center;
+  color: var(--neutral-medium);
+}
+
+
+
+.users-modal-header {
+  background: linear-gradient(135deg, #2a61ba, #132c54);
+}
+
+.users-danger-header {
+  background: linear-gradient(135deg, #7f1d1d, #dc2626);
+}
+
+.users-section-heading {
+  color: #d97706;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.users-info-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.modal .invalid-feedback {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .users-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .users-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 992px) {
+  .users-grid-header {
+    display: none;
+  }
+
+  .user-row-body {
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .user-phone,
+  .user-joined {
+    grid-column: 2;
+  }
+
+  .user-actions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    padding-top: 0.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .users-page .users-hero {
+    padding: 1.35rem 0;
+  }
+
+  .user-row-body,
+  .sidebar-card {
+    padding: 0.9rem;
+  }
+}

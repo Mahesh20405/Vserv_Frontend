@@ -1,0 +1,5 @@
+export { AboutPage } from './components/AboutPage'
+export { ContactPage } from './components/ContactPage'
+export { ErrorPage } from './components/ErrorPage'
+export { HomePage } from './components/HomePage'
+export { ServicesPage } from './components/ServicesPage'

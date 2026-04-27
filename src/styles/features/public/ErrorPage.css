@@ -1,0 +1,122 @@
+.system-error-page {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  background:
+    radial-gradient(circle at top left, rgba(249, 115, 22, 0.12), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(42, 97, 186, 0.16), transparent 34%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+}
+
+.system-error-panel {
+  width: 100%;
+  max-width: 720px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(189, 195, 199, 0.65);
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(44, 62, 80, 0.12);
+  padding: 40px 32px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.system-error-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(249, 115, 22, 0.1), transparent 40%),
+    linear-gradient(315deg, rgba(42, 97, 186, 0.08), transparent 45%);
+  pointer-events: none;
+}
+
+.system-error-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.system-error-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(249, 115, 22, 0.12);
+  color: var(--primary-accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.system-error-code {
+  font-size: clamp(4rem, 12vw, 7.5rem);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  color: var(--primary-dark);
+  margin: 18px 0 12px;
+}
+
+.system-error-title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.system-error-message {
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--neutral-medium);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.system-error-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.system-error-meta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.system-error-meta-item {
+  min-width: 120px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.system-error-meta-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--neutral-medium);
+  margin-bottom: 4px;
+}
+
+.system-error-meta-value {
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+@media (max-width: 576px) {
+  .system-error-panel {
+    padding: 32px 20px;
+    border-radius: 22px;
+  }
+}

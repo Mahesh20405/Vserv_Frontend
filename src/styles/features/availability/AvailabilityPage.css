@@ -1,0 +1,106 @@
+.availability-page .availability-add-btn,.availability-add-btn{display:inline-flex;align-items:center;gap:.45rem;background:var(--primary-accent);color:#fff;border:0;box-shadow:0 10px 20px rgba(249,115,22,.18)}
+.availability-add-btn:hover{background:var(--primary-accent-hover)}
+.availability-modal-header{background:linear-gradient(135deg,#2a61ba,#132c54)}
+.availability-danger-header{background:linear-gradient(135deg,#7f1d1d,#dc2626)}
+.availability-modal-desc{font-size:.78rem;margin-top:.2rem}
+
+.availability-layout{display:grid;gap:1rem;grid-template-columns:220px minmax(0,1fr) 300px}
+.availability-rail,.availability-sidebar{position:sticky;top:72px;align-self:start}
+.availability-sidebar{display:flex;flex-direction:column;gap:1rem}
+.availability-card,.availability-panel,.availability-sidebar .availability-card{background:#fff;border:1px solid #e5e7eb;border-radius:1rem;box-shadow:var(--shadow-sm)}
+.availability-card{padding:1rem}
+.availability-card-title{font-size:.86rem;font-weight:700;color:var(--primary-dark);margin-bottom:.9rem}
+.date-rail-wrap{background:#fff;border:1px solid #e5e7eb;border-radius:1rem;box-shadow:var(--shadow-sm);overflow:hidden}
+.rail-header{padding:1rem 1rem .85rem;border-bottom:1px solid #e5e7eb;background:#f8fafc}
+.rail-header-title,.stats-card-title{font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--neutral-medium)}
+.date-rail{padding:.8rem .75rem;max-height:560px;overflow:auto}
+.past-section{padding:.85rem .9rem;border-top:1px solid #e5e7eb}
+.slot-panel-wrap{background:#fff;border:1px solid #e5e7eb;border-radius:1rem;box-shadow:var(--shadow-sm);overflow:hidden}
+.results-bar{background:#fff;border:1px solid #e5e7eb;border-radius:.9rem .9rem 0 0;border-bottom:0;padding:.8rem 1rem .65rem;font-size:.75rem}
+.stats-sidebar .stats-card{padding:1rem}
+
+.availability-date-card{width:100%;text-align:left;background:#fff;border:1px solid #e5e7eb;border-radius:.95rem;padding:.8rem .85rem;margin-bottom:.55rem;transition:.16s}
+.availability-date-card:hover,.availability-date-card.selected{border-color:#fdba74;background:#fff8f1;box-shadow:0 0 0 3px rgba(249,115,22,.08)}
+.availability-date-card.today{border-color:#fed7aa}
+.availability-date-top{display:flex;gap:.35rem;align-items:baseline}
+.availability-date-dayname{font-size:.63rem;font-weight:700;color:var(--neutral-medium);text-transform:uppercase;letter-spacing:.06em}
+.availability-date-number{font-size:1.1rem;font-weight:800;color:var(--primary-dark)}
+.availability-date-month{margin-left:auto;font-size:.68rem;color:var(--neutral-medium)}
+.availability-date-bar{height:4px;border-radius:999px;background:#e5e7eb;overflow:hidden;margin:.45rem 0}
+.availability-date-bar-fill{display:block;height:100%;border-radius:inherit}
+.availability-date-badges{display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.38rem}
+.availability-mini-badge{display:inline-flex;align-items:center;border-radius:999px;padding:.12rem .45rem;font-size:.58rem;font-weight:700}
+.availability-mini-badge.green{background:#dcfce7;color:#15803d}
+.availability-mini-badge.amber{background:#fef3c7;color:#92400e}
+.availability-mini-badge.red{background:#fee2e2;color:#b91c1c}
+.availability-mini-badge.muted{background:#f3f4f6;color:#6b7280}
+.availability-date-footer{font-size:.66rem;color:var(--neutral-medium)}
+
+.availability-past{border-top:1px solid #e5e7eb;padding-top:.85rem;margin-top:.85rem}
+.availability-past-row,.availability-past-modal-row{width:100%;display:flex;justify-content:space-between;align-items:center;gap:.75rem;text-align:left;background:#fff;border:1px solid #e5e7eb;border-radius:.85rem;padding:.75rem .85rem;margin-bottom:.5rem}
+.availability-past-row:hover,.availability-past-modal-row:hover{border-color:#fdba74;background:#fff8f1}
+.availability-past-date{font-size:.8rem;font-weight:700;color:var(--primary-dark)}
+.availability-past-day,.availability-past-meta,.availability-past-modal-meta{font-size:.69rem;color:var(--neutral-medium)}
+.availability-past-modal-meta{display:flex;flex-direction:column;align-items:flex-end}
+.availability-more-btn{width:100%;border:1px solid #d1d5db;background:#fff;color:var(--neutral-dark);border-radius:.7rem;padding:.5rem .7rem;font-size:.78rem;font-weight:600}
+
+.availability-panel{overflow:hidden}
+.availability-panel-header{padding:1rem;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;flex-wrap:wrap;background:#fff}
+.availability-date-chip{display:inline-flex;padding:.28rem .7rem;border-radius:999px;border:1px solid #e5e7eb;background:#f3f4f6;color:#475569;font-size:.68rem;font-weight:700;margin-bottom:.45rem}
+.availability-date-chip.today{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+.availability-date-chip.past{color:#94a3b8}
+.availability-panel-title{font-size:1rem;font-weight:700;color:var(--primary-dark)}
+.availability-panel-meta{font-size:.74rem;color:var(--neutral-medium);margin-top:.15rem}
+.availability-status-pills{display:flex;gap:.4rem;flex-wrap:wrap}
+.availability-status-pill{padding:.28rem .7rem;border-radius:999px;font-size:.68rem;font-weight:700;border:1px solid}
+.availability-status-pill.green{background:#dcfce7;color:#15803d;border-color:#bbf7d0}
+.availability-status-pill.amber{background:#fef3c7;color:#92400e;border-color:#fde68a}
+.availability-status-pill.red{background:#fee2e2;color:#b91c1c;border-color:#fecaca}
+.availability-status-pill.muted{background:#f3f4f6;color:#6b7280;border-color:#e5e7eb}
+.availability-results-bar{background:#fff;border-bottom:1px solid #e5e7eb;padding:.7rem 1rem .6rem;display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap;font-size:.75rem;color:var(--neutral-medium)}
+.filter-pill{display:inline-flex;align-items:center;border-radius:999px;background:#fff2e8;color:#c2410c;font-size:.72rem;font-weight:700;padding:.2rem .6rem}
+
+.availability-slot-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.85rem;padding:1rem}
+.availability-slot{border:1px solid #e5e7eb;border-radius:1rem;padding:.95rem;background:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow-sm)}
+.availability-slot.filled:hover{box-shadow:var(--shadow-md);transform:translateY(-1px)}
+.availability-slot.tone-available:before,.availability-slot.tone-low:before,.availability-slot.tone-full:before,.availability-slot.tone-closed:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+.availability-slot.tone-available:before{background:#16a34a}
+.availability-slot.tone-low:before{background:#d97706}
+.availability-slot.tone-full:before{background:#dc2626}
+.availability-slot.tone-closed:before{background:#9ca3af}
+.availability-slot.empty{border-style:dashed;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:150px;text-align:center;background:#fafafa}
+.availability-slot-header{display:flex;justify-content:space-between;gap:.5rem;align-items:flex-start;margin-bottom:.7rem}
+.availability-slot-time,.availability-upcoming-time{font-family:monospace;font-size:.9rem;font-weight:700;color:var(--primary-dark)}
+.availability-slot-badge{display:inline-flex;align-items:center;gap:.35rem;padding:.2rem .55rem;border-radius:999px;border:1px solid;font-size:.63rem;font-weight:700}
+.availability-slot-dot{width:6px;height:6px;border-radius:50%;display:inline-block;flex-shrink:0}
+.availability-slot-bar,.availability-util-track{height:6px;border-radius:999px;background:#e5e7eb;overflow:hidden}
+.availability-slot-bar-fill,.availability-util-fill{display:block;height:100%;border-radius:inherit}
+.availability-slot-numbers,.availability-util-label{display:flex;justify-content:space-between;font-size:.68rem;color:var(--neutral-medium);margin:.35rem 0 .6rem}
+.availability-seat-grid{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:.75rem}
+.availability-seat{width:10px;height:10px;border-radius:3px;background:#e5e7eb}
+.availability-slot-actions{display:flex;gap:.45rem;padding-top:.7rem;border-top:1px solid #e5e7eb}
+.availability-empty-btn{border:1.5px dashed var(--primary-accent);background:transparent;color:var(--primary-accent);padding:.35rem .8rem;border-radius:.55rem;font-size:.72rem;font-weight:700}
+.availability-slot-empty,.availability-past-label,.availability-upcoming-date,.availability-upcoming-left,.availability-legend-row,.availability-legend-left{font-size:.72rem;color:var(--neutral-medium)}
+
+.availability-link-btn{display:flex;gap:.6rem;align-items:center;width:100%;padding:.78rem .85rem;border:1px solid #e5e7eb;border-radius:.85rem;background:#fff;text-decoration:none;color:var(--neutral-dark);font-weight:600;margin-top:.5rem}
+.availability-link-btn:hover{border-color:#fdba74;background:#fff8f1;color:var(--primary-accent)}
+.availability-link-icon{width:30px;height:30px;border-radius:.6rem;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}
+.availability-link-icon.orange{background:#fff7ed;color:#c2410c}
+.availability-link-icon.green{background:#dcfce7;color:#15803d}
+.availability-link-icon.amber{background:#fef3c7;color:#92400e}
+.availability-legend-row{display:flex;justify-content:space-between;align-items:center;padding:.2rem 0}
+.availability-legend-left{display:flex;align-items:center;gap:.4rem}
+.availability-legend-value{font-size:.74rem;font-weight:700;color:var(--primary-dark)}
+.availability-util-row{margin:.55rem 0}
+.availability-upcoming-row{width:100%;display:flex;align-items:center;gap:.55rem;padding:.55rem 0;border-bottom:1px solid #e5e7eb;background:transparent}
+.availability-upcoming-row:last-child{border-bottom:0}
+.availability-upcoming-info{display:flex;flex-direction:column;align-items:flex-start;flex:1;min-width:0}
+
+.availability-bulk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:.55rem}
+.availability-bulk-chip{border:1px solid #d1d5db;background:#fff;border-radius:.8rem;padding:.65rem .7rem;font-size:.74rem;font-weight:700;color:var(--primary-dark)}
+.availability-bulk-chip.selected{background:#fff7ed;border-color:#fdba74;color:#c2410c}
+.availability-bulk-chip:disabled{opacity:.45;cursor:not-allowed}
+.availability-modal-backdrop{background:rgba(15,23,42,.45)}
+
+@media (max-width:1200px){.availability-layout{grid-template-columns:220px minmax(0,1fr)}.availability-sidebar{grid-column:1/-1;position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.availability-rail{position:static}}
+@media (max-width:900px){.availability-layout{grid-template-columns:minmax(0,1fr)}.availability-slot-grid{grid-template-columns:minmax(0,1fr)}.availability-sidebar{grid-template-columns:minmax(0,1fr)}}
